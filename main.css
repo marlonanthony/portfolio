@@ -1,0 +1,125 @@
+body {
+  position: relative;
+}
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 70px;
+  background: linear-gradient(hsl(190, 51%, 91%), #fcfcfc);
+  z-index: 1;
+}
+#navbar ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+#navbar a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 10px;
+}
+#navbar a:hover {
+  font-size: 22px;
+  color: hsl(190, 51%, 71%);
+}
+#main {
+  background: #fcfcfc;
+}
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#fcfcfc, hsl(190, 51%, 91%));
+}
+header {
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-weight: 900;
+}
+#welcome-body {
+  text-align: center;
+}
+#pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 8px solid hsl(190, 51%, 91%);
+}
+#name {
+  font-weight: 600;
+  font-family: Ubuntu;
+}
+#job-description {
+  font-family: sans-serif;
+  font-weight: 100;
+  color: hsl(190, 51%, 71%);
+}
+.separate {
+  height: 50px; 
+  width: 100vw;
+  background: hsl(190, 51%, 91%);
+}
+.proj-container {
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  #background:linear-gradient(hsl(190, 51%, 91%),#fcfcfc);
+  background: hsl(190, 51%, 91%);
+}
+.proj-container img {
+  width: 400px;
+  height: 400px;
+}
+#projects-header {
+  text-align: center;
+  background:hsl(190, 51%, 91%);
+}
+.proj-container a {
+  color: hsl(190, 51%, 71%);
+  text-decoration: none;
+}
+#contact-info {
+  #background:linear-gradient(#fcfcfc, hsl(190, 51%, 91%));
+  background: hsl(190, 51%, 91%);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.contact-links {
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+.contact-links:hover {
+  font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+  .proj-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .proj-container img {
+  width: 300px;
+  height: 300px;
+  }
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
+}
